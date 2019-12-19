@@ -49,13 +49,13 @@ func main() {
 	//2.iota 遇到const,重置为0
 
 	const (
-		xx = 1
-		a  = iota
-		b  = iota
-		c  = iota
+		//xx = 1
+		a = iota
+		b = iota
+		c = iota
 	)
 
-	fmt.Println(a, b, c) //0,1,2
+	fmt.Println("iota=", a, b, c) //0,1,2
 
 	const d = iota
 	fmt.Println(d)
@@ -66,9 +66,10 @@ func main() {
 		c1
 		d1 = 100
 		e1
-		f1 = iota
+		f1
+		g1 = iota
 	)
-	fmt.Println(a1, b1, c1, d1, e1, f1)
+	fmt.Println("111==", a1, b1, c1, d1, e1, f1, g1)
 	//4.如果iota在同一行 值是一样的
 	const (
 		z    = iota       //0
