@@ -7,8 +7,9 @@ func main() {
 	var arr [5]int = [5]int{1, 2, 3, 4}
 	fmt.Println(arr)
 
+	//切片 可以看做一个 复合数据类型
 	//切片长度不固定可增加
-	//var slice[]int
+	//var slice []int
 	var slice []int = []int{1, 2, 3, 4, 5, 6}
 	slice = append(slice, 7) //新增元素
 	fmt.Println(slice)

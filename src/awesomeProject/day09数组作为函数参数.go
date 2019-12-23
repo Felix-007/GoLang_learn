@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//数组作为函数值传递
+//形参和实参是不同的地址 不影响值
 func BubboleSort(a [10]int) [10]int {
 	for i := 0; i < len(a)-1; i++ {
 		for j := 0; j < len(a)-1-i; j++ {
