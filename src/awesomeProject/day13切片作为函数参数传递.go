@@ -22,5 +22,6 @@ func demo(s []int) []int {
 	//fmt.Println(s)
 	//s[0] = 123
 	//fmt.Println(s)
-	return append(s, 7, 8)
+	s = append(s, 7, 8)
+	return s
 }
