@@ -13,7 +13,7 @@ func main() {
 	var str string = "banana"
 	fmt.Printf("%p %p \n", &cat, &str)
 
-	house := "malibu point 10088,90257"
+	house := "malibu point 10088,90257,test"
 
 	ptr := &house
 
