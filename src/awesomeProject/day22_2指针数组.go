@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//指针数据:数组里面都是指针
+//指针数组:数组里面都是指针
 func main_22_2() {
 	a := 10
 	b := 20
@@ -48,5 +48,4 @@ func main() {
 	//运算优先级
 	(*p)[1][1] = 500
 	fmt.Println(b)
-
 }

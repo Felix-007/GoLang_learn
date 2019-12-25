@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-//切片指针  *[]int
-func main() {
+//切片的指针  *[]int
+func main_23() {
 	/*
 				--------------------------------------
 				|		|        | s 	|       |
@@ -31,4 +31,17 @@ func main() {
 func test_23(a *[]int) {
 	(*a)[2] = 333
 	*a = append(*a, 4, 5, 6)
+}
+
+//指针切片:切片里面是指针
+func main() {
+	a := 10
+	b := 20
+	c := 30
+
+	p := []*int{&a, &b, &c}
+	fmt.Println(p)
+	fmt.Printf("%p\n", p)
+	fmt.Printf("%T\n", p)
+
 }
