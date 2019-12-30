@@ -49,6 +49,7 @@ func main() {
 			}
 		}
 		df.Write(buf[:n])
-		fmt.Println("复制完成")
+
 	}
+	fmt.Println("复制完成")
 }
